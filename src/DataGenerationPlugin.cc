@@ -194,12 +194,12 @@ namespace gazebo
             // Write object to annotation
             outfile << "    <object>" << endl;
             outfile << "        <name>" + objectClasses[i] + "</name>" << endl;
-            outfile << "        <bndbx>" << endl;
+            outfile << "        <bndbox>" << endl;
             outfile << "            <x>" + to_string(imgX) + "</x>" << endl;
             outfile << "            <y>" + to_string(imgY) + "</y>" << endl;
             outfile << "            <w>" + to_string(imgWidth) + "</w>" << endl;
             outfile << "            <h>" + to_string(imgHeight) + "</h>" << endl;
-            outfile << "        </bndbx>" << endl;
+            outfile << "        </bndbox>" << endl;
             outfile << "    </object>" << endl;
 
             i++;
