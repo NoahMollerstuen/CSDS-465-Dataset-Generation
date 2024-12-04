@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="Rock05">
+    <static>true</static>
+    <link name="base_link">
+      <visual name= "Rock05_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Rock05/meshes/Rock05.dae</uri>
+            <submesh>
+              <name>Rock05</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://Rock05/materials/textures/Rock_Albedo.png</albedo_map>
+              <normal_map>model://Rock05/materials/textures/Rock_Normal.png</normal_map>
+              <roughness_map>model://Rock05/materials/textures/Rock_Roughness.png</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://Rock05/materials/scripts/</uri>
+            <uri>model://Rock05/materials/textures/</uri>
+            <name>UrbanTile/Rock_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <pose>0 0 0 0 0 0</pose>
+            <uri>model://Rock05/meshes/Rock05.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

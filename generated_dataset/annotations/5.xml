@@ -1,0 +1,18 @@
+<annotation>
+    <folder>images</folder>
+    <filename>5.png</filename>
+    <path>images/5.png</path>
+    <size>
+        <width>512</width>
+        <height>399</height>
+    </size>
+    <object>
+        <name>uxo</name>
+        <bndbx>
+            <x>280.200891</x>
+            <y>65.177542</y>
+            <w>88.403456</w>
+            <h>80.111618</h>
+        </bndbx>
+    </object>
+</annotation>
